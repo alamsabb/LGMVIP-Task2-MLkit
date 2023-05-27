@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/icons8_result_64" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:text="Result data to be shown"
+                android:id="@+id/result"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Close"
+                android:textColor="@color/white"
+                android:backgroundTint="#E91E63"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:id="@+id/btnid"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
